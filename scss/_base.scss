@@ -1,0 +1,27 @@
+// Colors:
+
+$color-text-blue: hsl(238, 29%, 16%);
+$color-text-red: hsl(14, 88%, 65%);
+$color-text-greyishblue-dark: hsl(240, 6%, 50%);
+$color-text-greyishblue-darker: hsl(237, 12%, 33%);
+$color-bg-gradient-violet: hsl(273, 75%, 66%);
+$color-bg-gradient_blue: hsl(240, 73%, 65%);
+$color-dividers-greyishblue: hsl(240, 5%, 91%);
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 1.2rem;
+}
