@@ -1,12 +1,12 @@
 // Colors:
 
-$color-text-blue: hsl(238, 29%, 16%);
-$color-text-red: hsl(14, 88%, 65%);
-$color-text-greyishblue-dark: hsl(240, 6%, 50%);
-$color-text-greyishblue-darker: hsl(237, 12%, 33%);
-$color-bg-gradient-violet: hsl(273, 75%, 66%);
-$color-bg-gradient_blue: hsl(240, 73%, 65%);
-$color-dividers-greyishblue: hsl(240, 5%, 91%);
+$color-text-blue: #1d1e35;
+$color-text-red: #f47c57;
+$color-text-greyishblue-dark: #787887;
+$color-text-greyishblue-darker: #4a4b5e;
+$color-bg-gradient-violet: #af67e9;
+$color-bg-gradient_blue: #6565e7;
+$color-dividers-greyishblue: #e7e7e9;
 
 *,
 ::before,
@@ -24,4 +24,24 @@ html {
 body {
   font-family: "Kumbh Sans", sans-serif;
   font-size: 1.2rem;
+  background-color: #f2f2f2;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.container {
+  max-width: 144rem;
+  margin: 0 auto;
+  padding-block: 13rem;
+  background: linear-gradient(
+    180deg,
+    $color-bg-gradient-violet 0%,
+    $color-bg-gradient_blue 100%
+  );
 }

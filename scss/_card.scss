@@ -1,0 +1,10 @@
+.card {
+  max-width: 92rem;
+
+  border-radius: 2.3rem;
+  background-color: white;
+
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
