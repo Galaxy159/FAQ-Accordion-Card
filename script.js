@@ -14,7 +14,7 @@ questions.forEach((q, index) => {
     arrows[index].classList.toggle("spin");
     answers[index].classList.toggle("show");
 
-    if (previous.length > 1) {
+    if (previous.length > 1 && previous[previous.length - 2] !== index) {
       arrows[previous[previous.length - 2]].classList.remove("spin");
       answers[previous[previous.length - 2]].classList.remove("show");
     }
