@@ -15,8 +15,8 @@ questions.forEach((q, index) => {
     answers[index].classList.toggle("show");
 
     if (previous.length > 1) {
-      arrows[previous[previous.length - 2]].classList.toggle("spin");
-      answers[previous[previous.length - 2]].classList.toggle("show");
+      arrows[previous[previous.length - 2]].classList.remove("spin");
+      answers[previous[previous.length - 2]].classList.remove("show");
     }
   });
 });

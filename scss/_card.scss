@@ -22,7 +22,7 @@
 
     @include respond(phone) {
       background: url(../images/bg-pattern-mobile.svg) no-repeat;
-      background-position: right 0 top 0;
+      background-position: right 5rem bottom 5rem;
       margin-bottom: 13.2rem;
     }
 
