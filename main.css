@@ -41,6 +41,7 @@ body {
 
 .card {
   max-width: 92rem;
+  height: 50.9rem;
   border-radius: 2.3rem;
   background-color: white;
   margin: 0 auto;
@@ -50,6 +51,7 @@ body {
 @media (max-width: 920px) {
   .card {
     max-width: 32.7rem;
+    height: 53.5rem;
     grid-template-columns: 1fr;
   }
 }
