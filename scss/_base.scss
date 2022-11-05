@@ -8,6 +8,15 @@ $color-bg-gradient-violet: #af67e9;
 $color-bg-gradient_blue: #6565e7;
 $color-dividers-greyishblue: #e7e7e9;
 
+// media
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 920px) {
+      @content;
+    }
+  }
+}
+
 *,
 ::before,
 ::after {
@@ -44,4 +53,9 @@ body {
     $color-bg-gradient-violet 0%,
     $color-bg-gradient_blue 100%
   );
+
+  @include respond(phone) {
+    max-width: 37.5rem;
+    padding-block: 14.8rem 8.5rem;
+  }
 }

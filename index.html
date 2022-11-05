@@ -24,11 +24,17 @@
     <div class="container">
       <main class="card">
         <div class="card__hero">
-          <img
-            src="./images/illustration-box-desktop.svg"
-            alt="Box"
-            class="card__hero--img"
-          />
+          <picture>
+            <source
+              media="(max-width: 920px)"
+              srcset="./images/illustration-woman-online-mobile.svg"
+            />
+            <img
+              src="./images/illustration-box-desktop.svg"
+              alt="Box"
+              class="card__hero--img"
+            />
+          </picture>
         </div>
         <div class="card__list">
           <h1 class="card__list--headline">FAQ</h1>
@@ -130,7 +136,12 @@
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/Galaxy159" target="_blank"
+        >Galaxy159</a
+      >.
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

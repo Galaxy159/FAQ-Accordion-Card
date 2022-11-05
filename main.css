@@ -32,6 +32,12 @@ body {
   padding-block: 13rem;
   background: linear-gradient(180deg, #af67e9 0%, #6565e7 100%);
 }
+@media (max-width: 920px) {
+  .container {
+    max-width: 37.5rem;
+    padding-block: 14.8rem 8.5rem;
+  }
+}
 
 .card {
   max-width: 92rem;
@@ -40,4 +46,101 @@ body {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+@media (max-width: 920px) {
+  .card {
+    max-width: 32.7rem;
+    grid-template-columns: 1fr;
+  }
+}
+.card__hero {
+  position: relative;
+  background: url(../images/bg-pattern-desktop.svg) no-repeat, url(../images/illustration-woman-online-desktop.svg) no-repeat;
+  background-position: right 7rem top -29.4rem, right 7rem top 7rem;
+}
+@media (max-width: 920px) {
+  .card__hero {
+    background: url(../images/bg-pattern-mobile.svg) no-repeat;
+    background-position: right 0 top 0;
+    margin-bottom: 13.2rem;
+  }
+}
+.card__hero--img {
+  position: absolute;
+  top: 20.612rem;
+  right: 36.2rem;
+}
+@media (max-width: 920px) {
+  .card__hero--img {
+    height: 18rem;
+    top: -10.8rem;
+    right: 4.5rem;
+  }
+}
+.card__list {
+  display: grid;
+  grid-template-rows: repeat(6, -webkit-min-content);
+  grid-template-rows: repeat(6, min-content);
+  padding: 6.5rem 9.5rem 8.3rem 1.5rem;
+}
+@media (max-width: 920px) {
+  .card__list {
+    padding: 0 2.4rem 4.8rem 2.4rem;
+  }
+}
+.card__list--headline {
+  margin-bottom: 2.3rem;
+  justify-self: center;
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 4rem;
+}
+.card__list--item {
+  border-bottom: 1px solid #e7e7e9;
+  padding-block: 1.5rem;
+  cursor: url(../images/Pointer.svg), auto;
+}
+.card__list--item-arrow {
+  transition: all 0.2s;
+}
+.card__list--item-question {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.7rem;
+  color: #1d1e35;
+  display: grid;
+  grid-template-columns: 1fr -webkit-min-content;
+  grid-template-columns: 1fr min-content;
+}
+@media (max-width: 920px) {
+  .card__list--item-question {
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+  }
+}
+.card__list--item-question-text:hover,
+.card__list--item-question-text :active {
+  color: #f47c57;
+}
+.card__list--item-answer {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #787887;
+  overflow: hidden;
+}
+.card__list--item-answer-text {
+  height: 0;
+  transition: all 0.4s;
+  transform: translateY(-100%);
+}
+
+.spin {
+  transform: rotate(180deg);
+}
+
+.show {
+  height: 100%;
+  padding-top: 1.5rem;
+  transform: translateY(0%);
 }/*# sourceMappingURL=main.css.map */
