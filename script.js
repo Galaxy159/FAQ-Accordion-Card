@@ -13,10 +13,12 @@ questions.forEach((q, index) => {
     previous.push(index);
     arrows[index].classList.toggle("spin");
     answers[index].classList.toggle("show");
+    questions[index].classList.toggle("active");
 
     if (previous.length > 1 && previous[previous.length - 2] !== index) {
       arrows[previous[previous.length - 2]].classList.remove("spin");
       answers[previous[previous.length - 2]].classList.remove("show");
+      questions[previous[previous.length - 2]].classList.remove("active");
     }
   });
 });
