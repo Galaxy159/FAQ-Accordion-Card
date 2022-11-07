@@ -91,10 +91,15 @@ body {
 }
 .card__list--headline {
   margin-bottom: 2.3rem;
-  justify-self: center;
+  justify-self: left;
   font-size: 3.2rem;
   font-weight: 700;
   line-height: 4rem;
+}
+@media (max-width: 920px) {
+  .card__list--headline {
+    justify-self: center;
+  }
 }
 .card__list--item {
   border-bottom: 1px solid #e7e7e9;
